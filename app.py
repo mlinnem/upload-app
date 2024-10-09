@@ -47,7 +47,7 @@ def upload_file():
         
         except ClientError as e:
             print(f"Error: {e}")
-            return "File upload failed"
+            return f"File upload failed {e}"
     
 if __name__ == "__main__":
     app.run(debug=True)
