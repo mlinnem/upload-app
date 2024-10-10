@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.DEBUG)
 app = Flask(__name__)
 
 # IBM Cloud Object Storage configuration
-COS_ENDPOINT = 'https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints'  # Example endpoint, adjust as necessary
+COS_ENDPOINT = 'https://s3.us-south.cloud-object-storage.appdomain.cloud'  # Example endpoint, adjust as necessary
 COS_API_KEY_ID = 'KXYPDmNqPTVZogul31bFLG3-_U24qQaAjNnQaWxzpjfF'  # Replace with your IBM COS API key
 COS_INSTANCE_CRN = 'crn:v1:bluemix:public:cloud-object-storage:global:a/0bb4d59c58f057ca240dd82f9bf0ca02:e6782f1a-cbf0-4a2e-82cc-1dda2edb2fe8::'  # Replace with your service instance CRN
 COS_BUCKET_NAME = 'bucket-for-upload-app-2'  # Replace with your bucket name
